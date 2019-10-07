@@ -30,6 +30,12 @@ body {
     border-width: 2px;
     border-color: gray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-;
 
+
+}
+
+.row {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    font-style: italic;
 }
