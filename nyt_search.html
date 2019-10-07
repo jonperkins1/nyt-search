@@ -5,32 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!--bootstrap link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">​
+
+
+    <!--css link-->
+    <link ref= "stylesheet" href="style.css" type="text/css">
+
+
+    <!--javascript link-->
+  
+    <!--jquery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
 </head>
-<header>
-    <div class="container" id="titleBlock">
+
+<header class="container">
+    <div  id="titleBlock">
         <h1> New York Times Search </h1>
     </div>
 </header>
 <body>
-​
-​
-​
+
+    
+
     <div class="container">
+      
         
         <form id="input">
-​
+                <div class="row">
+                    <b>Search Parameter</b>
+                    </div>
+
                 <div class="form-group">
                   <label for="searchTerm">Search Term</label>
                   <input type="text" class="form-control" id="searchTerm">
                 </div>
-​
+
                 <div class="form-group">
                   <label for="recordsRetrieved">Number of Records to Retrieve</label>
                   <input type="text" class="form-control" id="recordsRetrieved">
                 </div>
-​
+
                 <div class="form-group">
                   <label for="startYear">Start Year (optional)</label>
                   <input type="text" class="form-control" id="startYear">
@@ -45,21 +62,3 @@
     
 </body>
 </html>
-
-
-
-
-
-<!--  
-
-
-    https://api.nytimes.com/svc/search/v2/articlesearch.json?q={query}&fq={filter}&api-key=yourkey
-
-
-    Example Call
-https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=yourkey
-
-https://api.nytimes.com/svc/search/v2/articlesearch.json?q={QUERY}&api-key=yourkey
-
-
--->
