@@ -20,9 +20,13 @@ $.ajax({
   method: "GET"
 }).then(function(response) {
 
-    $("#searchResults").append(JSON.stringify(response));
+    $("#searchResults").append("1: " + response.response.docs[0].headline.print_headline + "<br>");
+    $("#searchResults").append("2: " + response.response.docs[1].headline.print_headline  + "<br>");
+    $("#searchResults").append("3: " + response.response.docs[2].headline.print_headline  + "<br>");
+    $("#searchResults").append("4: " + response.response.docs[3].headline.print_headline  + "<br>");
+    $("#searchResults").append("5: " + response.response.docs[4].headline.print_headline  + "<br>");
   
- console.log("ajax response", response);
+ console.log("ajax response", response.response.docs[0].headline);
 })
 
 
